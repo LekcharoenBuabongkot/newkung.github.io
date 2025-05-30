@@ -1,0 +1,131 @@
+body {
+  font-family: 'Prompt', sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  color: white;
+  text-align: center;
+  background: linear-gradient(270deg, #ff6ec4, #7873f5, #4ade80, #facc15, #f472b6);
+  background-size: 1000% 1000%;
+  animation: rainbow 20s ease infinite;
+}
+
+@keyframes rainbow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+header {
+  padding: 60px 20px;
+}
+
+.highlight {
+  color: #fff700;
+}
+
+.profile {
+  padding: 50px 20px;
+}
+
+.profile-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.profile-img.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.bio {
+  max-width: 600px;
+  margin: 20px auto 0;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  border-radius: 15px;
+}
+
+/* ปุ่มลิงก์ */
+.menu {
+  padding: 40px 20px;
+}
+
+.menu h2 {
+  margin-bottom: 20px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.btn {
+  display: block;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 12px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+  background: rgba(255, 255, 255, 0.4);
+  transform: translateY(-3px);
+}
+.image-text {
+  display: flex;
+  align-items: center;
+  max-width: 900px;
+  margin: 40px auto;
+  gap: 30px;
+  padding: 0 20px;
+  color: white;
+}
+
+.image-text img {
+  width: 300px;
+  height: auto;
+  border-radius: 15px;
+  object-fit: cover;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.4);
+  flex-shrink: 0;
+}
+
+.image-text .text-box {
+  background: rgba(0, 0, 0, 0.3);
+  padding: 25px 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  flex: 1;
+  text-align: left;
+}
+
+.image-text .text-box h2 {
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.image-text .text-box p {
+  font-weight: 300;
+  line-height: 1.6;
+}
+.about-photo {
+  width: 300px;
+  border-radius: 15px;
+  object-fit: cover;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  display: block;
+  margin: 20px auto; /* กึ่งกลางแนวนอน */
+}
